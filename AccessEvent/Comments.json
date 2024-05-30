@@ -1,0 +1,53 @@
+[
+    {
+      "username": "Alice",
+      "text": "Que guay",
+      "userImage": "user1"
+    },
+    {
+      "username": "Bob",
+      "text": "Muchas gracias que alegria",
+      "userImage": "user2"
+    },
+    {
+      "username": "Charlie",
+      "text": "Que interesante",
+      "userImage": "user3"
+    },
+    {
+      "username": "David",
+      "text": "Me encanta",
+      "userImage": "user4"
+    },
+    {
+      "username": "Erika",
+      "text": "¡Genial!",
+      "userImage": "user5"
+    },
+    {
+      "username": "Fernando",
+      "text": "Estoy de acuerdo",
+      "userImage": "user6"
+    },
+    {
+      "username": "Gabriela",
+      "text": "No puedo esperar",
+      "userImage": "user7"
+    },
+    {
+      "username": "Hector",
+      "text": "Me gusta mucho",
+      "userImage": "user8"
+    },
+    {
+      "username": "Ines",
+      "text": "¡Increíble!",
+      "userImage": "user9"
+    },
+    {
+      "username": "Javier",
+      "text": "Lo que estaba buscando",
+      "userImage": "user10"
+    }
+  ]
+  
