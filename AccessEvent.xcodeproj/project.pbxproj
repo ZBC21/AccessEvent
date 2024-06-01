@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		280C2B4B2BFE2B5B00366EDC /* ScenesNo .swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C2B4A2BFE2B5B00366EDC /* ScenesNo .swift */; };
 		280D05E72C08BAF600047BE1 /* Comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 280D05E62C08BAF600047BE1 /* Comments.json */; };
+		28215CC72C092764007E9CC9 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 28215CC62C092764007E9CC9 /* posts.json */; };
 		28324E8B2C0866CF00B5336A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28324E8A2C0866CF00B5336A /* Comment.swift */; };
 		284E17942BFD34C700D90D3A /* AccessEventApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E17932BFD34C700D90D3A /* AccessEventApp.swift */; };
 		284E17962BFD34C700D90D3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E17952BFD34C700D90D3A /* ContentView.swift */; };
@@ -16,9 +17,8 @@
 		284E179B2BFD34C800D90D3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284E179A2BFD34C800D90D3A /* Preview Assets.xcassets */; };
 		284E17A62BFD415100D90D3A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E17A52BFD415100D90D3A /* PostView.swift */; };
 		284E17A82BFD432600D90D3A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E17A72BFD432600D90D3A /* Post.swift */; };
-		284E17AC2BFDD5E800D90D3A /* Who&FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E17AB2BFDD5E800D90D3A /* Who&FAQ.swift */; };
+		284E17AC2BFDD5E800D90D3A /* Who&FAQ&Standars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284E17AB2BFDD5E800D90D3A /* Who&FAQ&Standars.swift */; };
 		286AD02B2C07015600313EE6 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AD02A2C07015600313EE6 /* Registration.swift */; };
-		286B41132C08C95F00F6AF78 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 286B41122C08C95F00F6AF78 /* posts.json */; };
 		2880C0BB2C0522C400FB05FC /* SceneNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880C0BA2C0522C400FB05FC /* SceneNotification.swift */; };
 		2880C0BD2C052B6600FB05FC /* SceneUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880C0BC2C052B6600FB05FC /* SceneUserProfile.swift */; };
 		288A48672C065E0600B7B4EE /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A48662C065E0600B7B4EE /* UserSession.swift */; };
@@ -30,11 +30,15 @@
 		28C2CACF2C03885900AA9D73 /* SceneSettingNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2CACE2C03885900AA9D73 /* SceneSettingNotification.swift */; };
 		28C2CAD12C038B0D00AA9D73 /* SceneSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2CAD02C038B0D00AA9D73 /* SceneSecurity.swift */; };
 		28C2CAD32C038CF000AA9D73 /* ScenePersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2CAD22C038CF000AA9D73 /* ScenePersonalData.swift */; };
+		28C41C1A2C0A11F300B3BB52 /* ScneneNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C41C192C0A11F300B3BB52 /* ScneneNewPost.swift */; };
+		28C4FBD72C0A8CDF008B49F5 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FBD62C0A8CDF008B49F5 /* EditProfileView.swift */; };
+		28DC7C152C09EFB50039231D /* image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC7C142C09EFB50039231D /* image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		280C2B4A2BFE2B5B00366EDC /* ScenesNo .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScenesNo .swift"; sourceTree = "<group>"; };
 		280D05E62C08BAF600047BE1 /* Comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comments.json; sourceTree = "<group>"; };
+		28215CC62C092764007E9CC9 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
 		28324E8A2C0866CF00B5336A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		284E17902BFD34C700D90D3A /* AccessEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284E17932BFD34C700D90D3A /* AccessEventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessEventApp.swift; sourceTree = "<group>"; };
@@ -43,9 +47,8 @@
 		284E179A2BFD34C800D90D3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		284E17A52BFD415100D90D3A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		284E17A72BFD432600D90D3A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		284E17AB2BFDD5E800D90D3A /* Who&FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Who&FAQ.swift"; sourceTree = "<group>"; };
+		284E17AB2BFDD5E800D90D3A /* Who&FAQ&Standars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Who&FAQ&Standars.swift"; sourceTree = "<group>"; };
 		286AD02A2C07015600313EE6 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
-		286B41122C08C95F00F6AF78 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
 		2880C0BA2C0522C400FB05FC /* SceneNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneNotification.swift; sourceTree = "<group>"; };
 		2880C0BC2C052B6600FB05FC /* SceneUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneUserProfile.swift; sourceTree = "<group>"; };
 		288A48662C065E0600B7B4EE /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
@@ -57,6 +60,9 @@
 		28C2CACE2C03885900AA9D73 /* SceneSettingNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSettingNotification.swift; sourceTree = "<group>"; };
 		28C2CAD02C038B0D00AA9D73 /* SceneSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSecurity.swift; sourceTree = "<group>"; };
 		28C2CAD22C038CF000AA9D73 /* ScenePersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePersonalData.swift; sourceTree = "<group>"; };
+		28C41C192C0A11F300B3BB52 /* ScneneNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScneneNewPost.swift; sourceTree = "<group>"; };
+		28C4FBD62C0A8CDF008B49F5 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		28DC7C142C09EFB50039231D /* image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,14 +99,15 @@
 				284E17932BFD34C700D90D3A /* AccessEventApp.swift */,
 				280D05E62C08BAF600047BE1 /* Comments.json */,
 				284E17952BFD34C700D90D3A /* ContentView.swift */,
-				284E17AB2BFDD5E800D90D3A /* Who&FAQ.swift */,
+				284E17AB2BFDD5E800D90D3A /* Who&FAQ&Standars.swift */,
 				280C2B4A2BFE2B5B00366EDC /* ScenesNo .swift */,
 				28A0B55D2BFF942B00CBC198 /* SceneHome.swift */,
 				284E17A52BFD415100D90D3A /* PostView.swift */,
 				284E17A72BFD432600D90D3A /* Post.swift */,
-				286B41122C08C95F00F6AF78 /* posts.json */,
+				28215CC62C092764007E9CC9 /* posts.json */,
 				28324E8A2C0866CF00B5336A /* Comment.swift */,
 				28A0B55F2BFF9B8700CBC198 /* SceneSearch.swift */,
+				28C41C192C0A11F300B3BB52 /* ScneneNewPost.swift */,
 				28A0B5632BFFAC2C00CBC198 /* SceneSettings.swift */,
 				28C2CACE2C03885900AA9D73 /* SceneSettingNotification.swift */,
 				28C2CAD02C038B0D00AA9D73 /* SceneSecurity.swift */,
@@ -111,6 +118,8 @@
 				288A48662C065E0600B7B4EE /* UserSession.swift */,
 				2898F7762C06767300C9191D /* SceneRegistration.swift */,
 				286AD02A2C07015600313EE6 /* Registration.swift */,
+				28DC7C142C09EFB50039231D /* image.swift */,
+				28C4FBD62C0A8CDF008B49F5 /* EditProfileView.swift */,
 			);
 			path = AccessEvent;
 			sourceTree = "<group>";
@@ -185,7 +194,7 @@
 				280D05E72C08BAF600047BE1 /* Comments.json in Resources */,
 				284E179B2BFD34C800D90D3A /* Preview Assets.xcassets in Resources */,
 				284E17982BFD34C800D90D3A /* Assets.xcassets in Resources */,
-				286B41132C08C95F00F6AF78 /* posts.json in Resources */,
+				28215CC72C092764007E9CC9 /* posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,14 +207,17 @@
 			files = (
 				28A0B5602BFF9B8700CBC198 /* SceneSearch.swift in Sources */,
 				2898F7772C06767300C9191D /* SceneRegistration.swift in Sources */,
+				28C4FBD72C0A8CDF008B49F5 /* EditProfileView.swift in Sources */,
 				284E17962BFD34C700D90D3A /* ContentView.swift in Sources */,
-				284E17AC2BFDD5E800D90D3A /* Who&FAQ.swift in Sources */,
+				284E17AC2BFDD5E800D90D3A /* Who&FAQ&Standars.swift in Sources */,
 				286AD02B2C07015600313EE6 /* Registration.swift in Sources */,
 				28A0B5622BFF9CE100CBC198 /* SceneLogin.swift in Sources */,
 				28C2CAD32C038CF000AA9D73 /* ScenePersonalData.swift in Sources */,
 				2880C0BD2C052B6600FB05FC /* SceneUserProfile.swift in Sources */,
 				284E17A62BFD415100D90D3A /* PostView.swift in Sources */,
+				28DC7C152C09EFB50039231D /* image.swift in Sources */,
 				28324E8B2C0866CF00B5336A /* Comment.swift in Sources */,
+				28C41C1A2C0A11F300B3BB52 /* ScneneNewPost.swift in Sources */,
 				284E17942BFD34C700D90D3A /* AccessEventApp.swift in Sources */,
 				28C2CACF2C03885900AA9D73 /* SceneSettingNotification.swift in Sources */,
 				28A0B55E2BFF942B00CBC198 /* SceneHome.swift in Sources */,

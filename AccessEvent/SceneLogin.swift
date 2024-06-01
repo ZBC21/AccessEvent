@@ -16,7 +16,6 @@ struct SceneLogin: View {
     @EnvironmentObject var userSession: UserSession
     
     var body: some View {
-        
         VStack {
             if userSession.isLoggedIn {
                 UserProfile()
@@ -25,19 +24,21 @@ struct SceneLogin: View {
                     Color.white.ignoresSafeArea() // Set the background color for the entire view
                     
                     Circle()
-                        .fill(Color.init(hex:"968DA9")) // Set the fill color to the specified color
-                        .frame(width: 600, height: 600) // Set the size of the circle
+                        .fill(Color.init(hex: "968DA9")) // Set the fill color to the specified color
+                        .frame(width: 550, height: 600) // Set the size of the circle
                         .offset(x: 0, y: -400) // Adjust the offset to move the circle
+                    
                     VStack {
                         Image("logoF") // Add your image here
                             .resizable()
-                            .frame(width:  150, height: 140)
+                            .frame(width: 150, height: 140)
                         Text("AccessEvent")
                             .font(.title)
                             .foregroundColor(Color.black)
                             .bold()
-                    }.offset(x: 0, y: -270)
-
+                    }
+                    .offset(x: 0, y: -270)
+                    
                     VStack {
                         Text("Iniciar Sesión")
                             .font(.largeTitle)
@@ -46,7 +47,7 @@ struct SceneLogin: View {
                         TextField("Nombre de usuario", text: $username)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding()
-                            .frame(maxWidth:390)
+                            .frame(maxWidth: 390)
                             .accessibilityLabel("Nombre de usuario")
                             .font(.headline)
                             .bold()
@@ -54,11 +55,10 @@ struct SceneLogin: View {
                         SecureField("Contraseña", text: $password)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding()
-                            .frame(maxWidth:390)
+                            .frame(maxWidth: 390)
                             .accessibilityLabel("Contraseña")
                             .font(.headline)
                             .bold()
-
                         
                         if !errorMessage.isEmpty {
                             Text(errorMessage)
@@ -84,22 +84,25 @@ struct SceneLogin: View {
                         .disabled(username.isEmpty || password.isEmpty)
                         .opacity(username.isEmpty || password.isEmpty ? 0.5 : 1)
                         
-                        Button(action: {
-                            showingRegistrationView.toggle()
-                        }) {
-                            Text("Registrarse")
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(Color.green)
-                                .cornerRadius(15)
-                                .bold()
+                        HStack {
+                            Text("¿No tienes cuenta todavía?")
+                                .foregroundColor(.black)
+                            
+                            Text("Regístrate")
+                                .foregroundColor(.blue)
+                                .underline()
+                                .onTapGesture {
+                                    showingRegistrationView.toggle()
+                                }
                         }
                         .padding()
                     }
                     .padding()
                     .sheet(isPresented: $showingRegistrationView) {
                         RegistrationView()
-                    }.padding(.top,180)
+                            .environmentObject(userSession)
+                    }
+                    .padding(.top, 180)
                 }
             }
         }
@@ -107,17 +110,13 @@ struct SceneLogin: View {
     
     func login() {
         errorMessage = ""
-        
-        // Simulate loading
         isLoading = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             isLoading = false
             
-            // Simulate credential validation
-            if username == "Usuario" && password == "Password" {
-                userSession.username = username
-                userSession.isLoggedIn = true
+            if userSession.login(username: username, password: password) {
+                // Login successful
             } else {
                 errorMessage = "Credenciales inválidas."
             }

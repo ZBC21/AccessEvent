@@ -6,25 +6,28 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct Post: Identifiable, Decodable {
     let id = UUID() // Identificador único para cada post
     var username: String
-    var userImage: String
+    var userimage: String
     var location: String
-    var eventName: String
+    var eventname: String
     var description: String
     var imageName: String
+    var standar: String
     var likes: Int
     var isLiked: Bool
 
     enum CodingKeys: String, CodingKey {
         case username
-        case userImage
+        case userimage
         case location
-        case eventName
+        case eventname
         case description
         case imageName
+        case standar
         case likes
         case isLiked
     }
@@ -42,5 +45,14 @@ func loadPosts(from filename: String) -> [Post] {
     } catch {
         return []
     }
+}
+
+func loadImage(named imageName: String) -> UIImage? {
+    let fileURL = getDocumentsDirectory().appendingPathComponent(imageName)
+    return UIImage(contentsOfFile: fileURL.path)
+}
+
+func getDocumentsDirectory() -> URL {
+    FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
 }
 

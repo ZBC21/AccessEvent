@@ -92,13 +92,10 @@ class NotificationsViewController: UITableViewController {
 
     var notifications = [
         //cambiar estas notificaciones
-        Notification(title: "A post by an employee at LinkedIn is popular", subtitle: "CTV is growing quickly and for good reason. B2B Marketers want to be able to take advantage of this trend.", time: "1h", reactions: 400, comments: 36),
-        Notification(title: "LinkedIn News Europe posted", subtitle: "Welcome to the Wrap-Up – your summary of the day’s top news and talking points, curated by LinkedIn.", time: "5h", reactions: 0, comments: 0),
-        Notification(title: "The gender bias in medical terminology", subtitle: "The gender bias in medical terminology has far-reaching implications for women's health, says this doctor.", time: "6h", reactions: 0, comments: 0),
-        Notification(title: "Universidad Europea posted", subtitle: "La #UniversidadEuropea celebra con orgullo los diez años de la primera promoción de Medi...", time: "6h", reactions: 0, comments: 0),
-        Notification(title: "Having AI know-how can earn you more money", subtitle: "Having AI know-how can earn you more money, new research shows.", time: "7h", reactions: 0, comments: 0),
-        Notification(title: "Bending Spoons is hiring", subtitle: "Software Engineer, Internship. See this and 5 other job recommendations.", time: "7h", reactions: 0, comments: 0),
-        Notification(title: "Want to make better decisions?", subtitle: "Ask better questions. Try using this framework.", time: "8h", reactions: 0, comments: 0)
+        Notification(title: "Actualización del Evento:", subtitle: "El evento ha actualizado su fecha/hora", time: "1h", reactions: 400, comments: 36),
+        Notification(title: "Recordatorio del Evento", subtitle: "No olvides que el evento comienza en una hora", time: "5h", reactions: 10, comments: 3),
+        Notification(title: "Cambio de Ubicación", subtitle: "Iportante: Tu evento ha cambiado de ubicación", time: "15h", reactions: 1, comments: 5),
+        Notification(title: "Recordatorio de Inscripción", subtitle: "Última oportunidad para inscribirte en Opera inclusiva", time: "1d", reactions: 3, comments: 4),
     ]
 
     override func viewDidLoad() {

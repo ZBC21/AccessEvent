@@ -6,7 +6,10 @@
       "location": "Centro Cultural de Barcelona, Cataluña, España",
       "eventname": "Exposición de Arte Inclusiva",
       "description": "Una exposición de arte en el Centro Cultural de Barcelona que ofrece accesibilidad completa. Incluye guías en lengua de signos, rampas y ascensores, así como materiales en braille. Este evento es una oportunidad para que todos disfruten del arte sin barreras. Más información y compra de entradas en la página oficial.",
-      "imageName": "post1"
+      "imageName": "post1",
+      "standar": "Tier 1, Normas Generales Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 2,
@@ -15,7 +18,10 @@
       "location": "Auditorio Nacional, Comunidad de Madrid, España",
       "eventname": "Concierto de Música Clásica",
       "description": "Un concierto de música clásica en el Auditorio Nacional, diseñado para ser accesible para todos. Se proporcionarán audioguías, subtítulos en tiempo real y asistencia auditiva. Este evento es perfecto para los amantes de la música que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post2"
+      "imageName": "post2",
+      "standar": "Tier 1, Normas Generales Nivel 1",
+      "likes": 11,
+      "isLiked": false
     },
     {
       "id": 3,
@@ -24,7 +30,10 @@
       "location": "IFEMA, Comunidad de Madrid, España",
       "eventname": "Feria de Innovación Tecnológica",
       "description": "Una feria de innovación tecnológica en IFEMA, accesible para todos con pasillos amplios, intérpretes de lengua de signos y dispositivos de asistencia auditiva. Es una excelente oportunidad para descubrir las últimas novedades en tecnología de manera inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post3"
+      "imageName": "post3",
+      "standar": "Tier 1, Normas Generales Nivel 1",
+      "likes": 12,
+      "isLiked": false
     },
     {
       "id": 4,
@@ -33,7 +42,10 @@
       "location": "Estadio Olímpico, Andalucía, España",
       "eventname": "Juegos Paralímpicos Regionales",
       "description": "Los Juegos Paralímpicos Regionales en el Estadio Olímpico están diseñados para ser completamente accesibles. Se proporcionarán asientos reservados, intérpretes de lengua de signos y asistencia especializada. Este evento es una celebración del deporte inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post4"
+      "imageName": "post4",
+      "standar": "Tier 2, Normas Generales Nivel 2",
+      "likes": 20,
+      "isLiked": false
     },
     {
       "id": 5,
@@ -42,7 +54,10 @@
       "location": "Teatro Principal, Comunidad Valenciana, España",
       "eventname": "Obra de Teatro Adaptada",
       "description": "Una obra de teatro adaptada en el Teatro Principal que incluye subtítulos, audiodescripción y accesibilidad física. Este evento garantiza que todos puedan disfrutar de una noche de teatro sin barreras. Más información y compra de entradas en la página oficial.",
-      "imageName": "post5"
+      "imageName": "post5",
+      "standar": "Tier 2, Normas Generales Nivel 2",
+      "likes": 30,
+      "isLiked": false
     },
     {
       "id": 6,
@@ -51,7 +66,10 @@
       "location": "Parque del Retiro, Comunidad de Madrid, España",
       "eventname": "Cine al Aire Libre",
       "description": "Disfruta de una noche de cine al aire libre en el Parque del Retiro, accesible para todos con subtítulos y audiodescripción. Se proporcionarán áreas reservadas y acceso adecuado para personas con movilidad reducida. Este evento es una forma perfecta de disfrutar del cine en un entorno inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post6"
+      "imageName": "post6",
+      "standar": "Tier 3, Normas Generales Nivel 3",
+      "likes": 20,
+      "isLiked": false
     },
     {
       "id": 7,
@@ -60,7 +78,10 @@
       "location": "Museo del Prado, Comunidad de Madrid, España",
       "eventname": "Visita Guiada Inclusiva",
       "description": "Únete a una visita guiada inclusiva en el Museo del Prado, que incluye guías en lengua de signos, materiales táctiles y acceso adecuado. Este evento es una excelente manera de explorar el arte y la historia de una manera accesible. Más información y compra de entradas en la página oficial.",
-      "imageName": "post7"
+      "imageName": "post7",
+      "standar": "Tier 3, Normas Generales Nivel 3",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 8,
@@ -69,7 +90,10 @@
       "location": "Auditorio Nacional, Comunidad de Madrid, España",
       "eventname": "Festival de Jazz",
       "description": "Un festival de jazz en el Auditorio Nacional, accesible para todos. Se proporcionarán intérpretes de lengua de signos, audioguías y acceso adecuado para personas con movilidad reducida. Este evento es ideal para los amantes del jazz que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post8"
+      "imageName": "post8",
+      "standar": "Tier 3, Normas Generales Nivel 3",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 9,
@@ -78,7 +102,10 @@
       "location": "Palacio de Deportes, Comunidad de Madrid, España",
       "eventname": "Campeonato de Esgrima",
       "description": "El Campeonato de Esgrima en el Palacio de Deportes es accesible para todos, con asientos reservados y apoyo especializado. Se ofrecerán intérpretes y audiodescripción. Este evento es una oportunidad para disfrutar del deporte inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post9"
+      "imageName": "post9",
+      "standar": "Tier 1, Discapacidad de movilidad Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 10,
@@ -87,7 +114,10 @@
       "location": "Parque del Retiro, Comunidad de Madrid, España",
       "eventname": "Festival de Cine al Aire Libre",
       "description": "Disfruta del Festival de Cine al Aire Libre en el Parque del Retiro, accesible para todos, con subtítulos y audiodescripción. Se proporcionarán asientos reservados y acceso adecuado. Este evento es una excelente manera de disfrutar del cine en un entorno natural e inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post10"
+      "imageName": "post10",
+      "standar": "Tier 2, Discapacidad de movilidad Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 11,
@@ -96,7 +126,10 @@
       "location": "Museo del Prado, Comunidad de Madrid, España",
       "eventname": "Exposición de Arte Moderno",
       "description": "Una exposición de arte moderno en el Museo del Prado, completamente accesible con guías en lengua de signos y materiales táctiles. Acceso adecuado garantizado. Este evento es perfecto para los amantes del arte moderno que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post11"
+      "imageName": "post11",
+      "standar": "Tier 2, Discapacidad de movilidad Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 12,
@@ -105,7 +138,10 @@
       "location": "Teatro de la Zarzuela, Comunidad de Madrid, España",
       "eventname": "Musical de Broadway",
       "description": "Disfruta de un musical de Broadway en el Teatro de la Zarzuela, con accesibilidad total. Se proporcionarán subtítulos, audiodescripción y acceso físico adecuado. Este evento es ideal para los amantes del teatro musical que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post12"
+      "imageName": "post19",
+      "standar": "Tier 3, Discapacidades Visuales Nivel 3",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 13,
@@ -114,7 +150,10 @@
       "location": "Museo Reina Sofía, Comunidad de Madrid, España",
       "eventname": "Galería de Arte Contemporáneo",
       "description": "Visita la galería de arte contemporáneo en el Museo Reina Sofía, diseñada para ser accesible para todos. Se ofrecen guías en lengua de signos y materiales táctiles. Este evento es una excelente manera de explorar el arte contemporáneo de manera inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post13"
+      "imageName": "post13",
+      "standar": "Tier 3, Discapacidades Visuales Nivel 3",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 14,
@@ -123,7 +162,10 @@
       "location": "Centro Cultural Conde Duque, Comunidad de Madrid, España",
       "eventname": "Taller de Pintura Inclusivo",
       "description": "Un taller de pintura en el Centro Cultural Conde Duque, accesible para todos, con materiales adaptados y apoyo especializado. Este evento es perfecto para aquellos que buscan una experiencia artística inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post14"
+      "imageName": "post14",
+      "standar": "Tier 1, Discapacidades Visuales Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 15,
@@ -132,7 +174,10 @@
       "location": "Museo Thyssen-Bornemisza, Comunidad de Madrid, España",
       "eventname": "Exposición de Escultura",
       "description": "Una exposición de escultura en el Museo Thyssen-Bornemisza, accesible con guías en lengua de signos y materiales táctiles. Acceso adecuado garantizado. Este evento es ideal para los amantes de la escultura que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post15"
+      "imageName": "post15",
+      "standar": "Tier 2, Discapacidades Visuales Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 16,
@@ -141,7 +186,10 @@
       "location": "Sala Riviera, Comunidad de Madrid, España",
       "eventname": "Concierto de Música Electrónica",
       "description": "Un concierto de música electrónica en la Sala Riviera, diseñado para ser accesible para todos. Se proporcionarán intérpretes de lengua de signos y asistencia auditiva. Este evento es perfecto para los amantes de la música electrónica que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post16"
+      "imageName": "post16",
+      "standar": "Tier 2, Discapacidades Auditivas Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 17,
@@ -150,7 +198,10 @@
       "location": "Teatro Barceló, Comunidad de Madrid, España",
       "eventname": "Noche de Comedia",
       "description": "Disfruta de una noche de comedia en el Teatro Barceló, accesible para todos con subtítulos y audiodescripción. Se proporcionarán asientos reservados y acceso adecuado. Este evento es ideal para aquellos que buscan reír en un entorno inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post17"
+      "imageName": "post17",
+      "standar": "Tier 2, Discapacidades Auditivas Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 18,
@@ -159,7 +210,10 @@
       "location": "Cines Callao, Comunidad de Madrid, España",
       "eventname": "Festival de Cortometrajes",
       "description": "Un festival de cortometrajes en los Cines Callao, con accesibilidad total. Se proporcionarán subtítulos y audiodescripción, así como acceso físico adecuado. Este evento es ideal para los amantes del cine que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post18"
+      "imageName": "post18",
+      "standar": "Tier 1, Discapacidades Auditivas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 19,
@@ -168,7 +222,10 @@
       "location": "Parque del Retiro, Comunidad de Madrid, España",
       "eventname": "Clase de Yoga al Aire Libre",
       "description": "Participa en una clase de yoga al aire libre en el Parque del Retiro, accesible para todos con instructores especializados y apoyo adecuado. Este evento es perfecto para aquellos que buscan una experiencia de bienestar inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post19"
+      "imageName": "post19",
+      "standar": "Tier 1, Discapacidades Auditivas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 20,
@@ -177,7 +234,10 @@
       "location": "Centro de Valencia, Comunidad Valenciana, España",
       "eventname": "Maratón Inclusivo",
       "description": "Únete al maratón inclusivo en el Centro de Valencia, con rutas accesibles y apoyo especializado. Este evento es una excelente oportunidad para disfrutar del deporte en un entorno inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post20"
+      "imageName": "post20",
+      "standar": "Tier 1, Discapacidades Cognitivas y Psicológicas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 21,
@@ -186,7 +246,10 @@
       "location": "Palau de la Música, Comunidad Valenciana, España",
       "eventname": "Concierto de Orquesta",
       "description": "Un concierto de orquesta en el Palau de la Música, accesible para todos con audioguías y asistencia auditiva. Este evento es perfecto para los amantes de la música clásica que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post1"
+      "imageName": "post1",
+      "standar": "Tier 2, Discapacidades Cognitivas y Psicológicas Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 22,
@@ -195,7 +258,10 @@
       "location": "Teatro Principal, Comunidad Valenciana, España",
       "eventname": "Festival de Danza Contemporánea",
       "description": "Un festival de danza contemporánea en el Teatro Principal, diseñado para ser accesible para todos. Se proporcionarán intérpretes de lengua de signos y acceso adecuado. Este evento es ideal para los amantes de la danza que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post12"
+      "imageName": "post12",
+      "standar": "Tier 3, Discapacidades Cognitivas y Psicológicas Nivel 3",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 23,
@@ -204,7 +270,10 @@
       "location": "Centro Cultural de Sevilla, Andalucía, España",
       "eventname": "Festival de Música y Artes",
       "description": "Un festival de música y artes en el Centro Cultural de Sevilla, accesible para todos con intérpretes de lengua de signos y materiales táctiles. Este evento es perfecto para disfrutar de una experiencia artística inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post3"
+      "imageName": "post3",
+      "standar": "Tier 1, Discapacidades Cognitivas y Psicológicas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 24,
@@ -213,7 +282,10 @@
       "location": "Mercado de San Miguel, Comunidad de Madrid, España",
       "eventname": "Feria Gastronómica",
       "description": "Disfruta de la Feria Gastronómica en el Mercado de San Miguel, accesible para todos con menús en braille y apoyo especializado. Este evento es una excelente manera de explorar la gastronomía en un entorno inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post14"
+      "imageName": "post14",
+      "standar": "Tier 1, Discapacidades Auditivas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 25,
@@ -222,7 +294,10 @@
       "location": "Librería La Central, Cataluña, España",
       "eventname": "Lectura Inclusiva",
       "description": "Únete a una sesión de lectura inclusiva en la Librería La Central, con textos en braille y apoyo especializado. Este evento es ideal para los amantes de la lectura que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post5"
+      "imageName": "post5",
+      "standar": "Tier 1, Discapacidades Auditivas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 26,
@@ -231,7 +306,10 @@
       "location": "Piscina Municipal, Comunidad Valenciana, España",
       "eventname": "Campeonato de Natación",
       "description": "El Campeonato de Natación en la Piscina Municipal es accesible para todos, con asientos reservados y apoyo especializado. Se ofrecerán intérpretes y audiodescripción. Este evento es una excelente oportunidad para disfrutar del deporte inclusivo. Más información y compra de entradas en la página oficial.",
-      "imageName": "post16"
+      "imageName": "post16",
+      "standar": "Tier 1, Discapacidades Auditivas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 27,
@@ -240,7 +318,10 @@
       "location": "Museo Reina Sofía, Comunidad de Madrid, España",
       "eventname": "Galería de Fotografía",
       "description": "Visita la galería de fotografía en el Museo Reina Sofía, diseñada para ser accesible para todos. Se ofrecen guías en lengua de signos y materiales táctiles. Este evento es una excelente manera de explorar la fotografía de manera inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post19"
+      "imageName": "post19",
+      "standar": "Tier 1, Discapacidades Auditivas Nivel 1",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 28,
@@ -249,7 +330,10 @@
       "location": "Teatro Real, Comunidad de Madrid, España",
       "eventname": "Ópera Inclusiva",
       "description": "Disfruta de una ópera inclusiva en el Teatro Real, con subtítulos, audiodescripción y acceso adecuado para todos. Este evento es ideal para los amantes de la ópera que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post8"
+      "imageName": "post8",
+      "standar": "Tier 2, Discapacidades Auditivas Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 29,
@@ -258,7 +342,10 @@
       "location": "Mercado de San Antón, Comunidad de Madrid, España",
       "eventname": "Taller de Cocina Inclusiva",
       "description": "Participa en un taller de cocina inclusiva en el Mercado de San Antón, con recetas en braille y apoyo especializado. Este evento es perfecto para aquellos que buscan una experiencia culinaria inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post9"
+      "imageName": "post9",
+      "standar": "Tier 3, Discapacidades Auditivas Nivel 3",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 30,
@@ -267,7 +354,10 @@
       "location": "Centro Cultural de Valencia, Comunidad Valenciana, España",
       "eventname": "Taller de Cerámica",
       "description": "Únete a un taller de cerámica en el Centro Cultural de Valencia, accesible para todos con materiales adaptados y apoyo especializado. Este evento es ideal para aquellos que buscan una experiencia artística inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post10"
+      "imageName": "post10",
+      "standar": "Tier 2, DDiscapacidades Visuales Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 31,
@@ -276,7 +366,10 @@
       "location": "Jazz Club, Comunidad de Madrid, España",
       "eventname": "Concierto de Jazz",
       "description": "Disfruta de un concierto de jazz en el Jazz Club, accesible para todos con intérpretes de lengua de signos y asistencia auditiva. Este evento es perfecto para los amantes del jazz que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post2"
+      "imageName": "post2",
+      "standar": "Tier 2, DDiscapacidades Visuales Nivel 2",
+      "likes": 10,
+      "isLiked": false
     },
     {
       "id": 32,
@@ -285,6 +378,9 @@
       "location": "Cines Princesa, Comunidad de Madrid, España",
       "eventname": "Ciclo de Cine Inclusivo",
       "description": "Participa en un ciclo de cine inclusivo en los Cines Princesa, con subtítulos, audiodescripción y acceso adecuado. Este evento es ideal para los amantes del cine que buscan una experiencia inclusiva. Más información y compra de entradas en la página oficial.",
-      "imageName": "post6"
+      "imageName": "post6",
+      "standar": "Tier 2, DDiscapacidades Visuales Nivel 2",
+      "likes": 10,
+      "isLiked": false
     }
 ]

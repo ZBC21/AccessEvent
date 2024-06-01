@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct PostView: View {
     @State var post: Post
     @State private var showingCommentInput = false
@@ -16,7 +17,7 @@ struct PostView: View {
         VStack(alignment: .leading, spacing: 10) {
             // User Image and Name
             HStack {
-                Image(post.userImage)
+                Image(post.userimage)
                     .resizable()
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
@@ -29,7 +30,7 @@ struct PostView: View {
             }
 
             // Event Name
-            Text(post.eventName)
+            Text(post.eventname)
                 .font(.title2)
                 .fontWeight(.bold)
 
@@ -38,9 +39,19 @@ struct PostView: View {
                 .font(.body)
 
             // Image
-            Image(post.imageName)
-                .resizable()
-                .scaledToFit()
+            if let uiImage = loadImage(named: post.imageName) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(8)
+            } else {
+                Text("Image not available")
+            }
+            
+            Text(post.standar)
+                .font(.body)
+                .bold()
+                .multilineTextAlignment(.center)
 
             // Action Buttons
             HStack {
@@ -87,9 +98,25 @@ struct PostView: View {
 
     func sharePost() {
         // Action to share the post (this is just a placeholder)
-        print("Sharing post: \(post.eventName)")
+        print("Sharing post: \(post.eventname)")
+    }
+
+    private func loadImage(named imageName: String) -> UIImage? {
+        // First check if the image is in the Assets catalog
+        if let assetImage = UIImage(named: imageName) {
+            return assetImage
+        }
+        
+        // If not found in Assets, try to load from the Documents directory
+        let fileURL = getDocumentsDirectory().appendingPathComponent(imageName)
+        return UIImage(contentsOfFile: fileURL.path)
+    }
+
+    private func getDocumentsDirectory() -> URL {
+        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
 }
+
 
 
 struct CommentInputView: View {
@@ -145,10 +172,10 @@ struct CommentInputView: View {
                         }
                         .padding()
                         Button(action: verifyUsingCamera) {
-                            Text("Verify Using Camera")
+                            Text("Escanea para Comentar")
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(Color.green)
+                                .background(Color.init(hex:"43306C"))
                                 .cornerRadius(15)
                         }
                         .padding()
@@ -186,8 +213,8 @@ struct CommentInputView: View {
     }
 }
 
-struct PostView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostView(post: Post(username: "John Doe",userImage: "userimage" , location: "New York", eventName: "Sample Event", description: "This is a sample post description.", imageName: "sampleimage", likes: 0, isLiked: false))
-    }
-}
+//struct PostView_Previews: PreviewProvider {
+   // static var previews: some View {
+  //      PostView()
+   // }
+//}
