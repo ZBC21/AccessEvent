@@ -181,7 +181,7 @@ struct RegistrationView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var userSession: UserSession
     
-    private let usersFileName = "user.json"
+    private let usersFileName = "users.json"
     
     var body: some View {
         VStack {
@@ -321,8 +321,16 @@ struct RegistrationView: View {
             let data = try encoder.encode(users)
             try data.write(to: url)
             print("Datos del usuario guardados exitosamente en \(url).")
+            
         } catch {
             print("Error al guardar los datos del usuario: \(error.localizedDescription)")
+        }
+        if let users = loadUsers() {
+            for user in users {
+                print("Username: \(user.username), Password: \(user.password)")
+            }
+        } else {
+            print("No users found.")
         }
     }
     

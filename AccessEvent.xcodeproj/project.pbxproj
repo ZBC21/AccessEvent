@@ -32,6 +32,7 @@
 		28C2CAD32C038CF000AA9D73 /* ScenePersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2CAD22C038CF000AA9D73 /* ScenePersonalData.swift */; };
 		28C41C1A2C0A11F300B3BB52 /* ScneneNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C41C192C0A11F300B3BB52 /* ScneneNewPost.swift */; };
 		28C4FBD72C0A8CDF008B49F5 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C4FBD62C0A8CDF008B49F5 /* EditProfileView.swift */; };
+		28D9C7462C0BE8F100375535 /* sharesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9C7452C0BE8F100375535 /* sharesheet.swift */; };
 		28DC7C152C09EFB50039231D /* image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC7C142C09EFB50039231D /* image.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		28C2CAD22C038CF000AA9D73 /* ScenePersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePersonalData.swift; sourceTree = "<group>"; };
 		28C41C192C0A11F300B3BB52 /* ScneneNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScneneNewPost.swift; sourceTree = "<group>"; };
 		28C4FBD62C0A8CDF008B49F5 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		28D9C7452C0BE8F100375535 /* sharesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharesheet.swift; sourceTree = "<group>"; };
 		28DC7C142C09EFB50039231D /* image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				286AD02A2C07015600313EE6 /* Registration.swift */,
 				28DC7C142C09EFB50039231D /* image.swift */,
 				28C4FBD62C0A8CDF008B49F5 /* EditProfileView.swift */,
+				28D9C7452C0BE8F100375535 /* sharesheet.swift */,
 			);
 			path = AccessEvent;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				28C2CAD12C038B0D00AA9D73 /* SceneSecurity.swift in Sources */,
 				284E17A82BFD432600D90D3A /* Post.swift in Sources */,
 				280C2B4B2BFE2B5B00366EDC /* ScenesNo .swift in Sources */,
+				28D9C7462C0BE8F100375535 /* sharesheet.swift in Sources */,
 				28A0B5642BFFAC2C00CBC198 /* SceneSettings.swift in Sources */,
 				288A48672C065E0600B7B4EE /* UserSession.swift in Sources */,
 			);
@@ -357,9 +361,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AccessEvent/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -374,6 +379,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ZBC21.AccessEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,9 +391,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AccessEvent/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -402,6 +409,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ZBC21.AccessEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

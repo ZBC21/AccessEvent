@@ -14,7 +14,7 @@ struct SceneLogin: View {
     @State private var isLoading: Bool = false
     @State private var showingRegistrationView = false
     @EnvironmentObject var userSession: UserSession
-    
+
     var body: some View {
         VStack {
             if userSession.isLoggedIn {
@@ -123,7 +123,6 @@ struct SceneLogin: View {
         }
     }
 }
-
 
 #Preview {
     SceneLogin()

@@ -46,7 +46,7 @@ struct SceneHome: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         NavigationLink(destination: QuienesSomosView()) {
-                            Text("¿Quienes Somos?")
+                            Text("¿Quiénes Somos?")
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(Color.init(hex: "6A5A8D"))

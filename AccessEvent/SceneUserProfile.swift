@@ -12,8 +12,8 @@ struct UserProfile: View {
     @State private var posts: [Post] = []
     @State private var isShowingNewPostView = false
     @State private var isShowingEditView = false
-    @State private var contactInfo: String = "Representante: Francisco Mendoza \nEmail: support@theaterproductions.com"
-    @State private var bio: String = "Theater Productions Ltd. es una empresa líder en la producción de espectáculos teatrales inclusivos. Comprometidos con la accesibilidad, ofrecemos experiencias teatrales de alta calidad para todos los públicos. Contáctenos para disfrutar del mejor teatro accesible."
+    @State private var contactInfo: String = "Ejemplo de datos de contacto: \nRepresentante: Francisco Mendoza \nEmail: support@theaterproductions.com"
+    @State private var bio: String = "Ejeplo de descipción: \nTheater Productions Ltd. es una empresa líder en la producción de espectáculos teatrales inclusivos. Comprometidos con la accesibilidad, ofrecemos experiencias teatrales de alta calidad para todos los públicos. Contáctenos para disfrutar del mejor teatro accesible."
     @State private var backgroundImageName: String = "userBackground"
     @State private var selectedBackgroundImage: UIImage?
     @State private var selectedProfileImage: UIImage?

@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-
 struct PostView: View {
     @State var post: Post
     @State private var showingCommentInput = false
     @State private var commentText = ""
+    @State private var isSharing = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -47,7 +47,7 @@ struct PostView: View {
             } else {
                 Text("Image not available")
             }
-            
+
             Text(post.standar)
                 .font(.body)
                 .bold()
@@ -74,12 +74,15 @@ struct PostView: View {
                 }
                 Spacer()
                 Button(action: {
-                    sharePost()
+                    isSharing.toggle()
                 }) {
                     HStack {
                         Image(systemName: "square.and.arrow.up")
                         Text("Share")
                     }
+                }
+                .sheet(isPresented: $isSharing) {
+                    ShareSheet(items: ["Check out this event: \(post.eventname)\n\(post.description)"])
                 }
             }
             .padding(.top, 10)
@@ -96,17 +99,12 @@ struct PostView: View {
         post.likes += post.isLiked ? 1 : -1
     }
 
-    func sharePost() {
-        // Action to share the post (this is just a placeholder)
-        print("Sharing post: \(post.eventname)")
-    }
-
     private func loadImage(named imageName: String) -> UIImage? {
         // First check if the image is in the Assets catalog
         if let assetImage = UIImage(named: imageName) {
             return assetImage
         }
-        
+
         // If not found in Assets, try to load from the Documents directory
         let fileURL = getDocumentsDirectory().appendingPathComponent(imageName)
         return UIImage(contentsOfFile: fileURL.path)
@@ -116,8 +114,6 @@ struct PostView: View {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
 }
-
-
 
 struct CommentInputView: View {
     @Binding var commentText: String

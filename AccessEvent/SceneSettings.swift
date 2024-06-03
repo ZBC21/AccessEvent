@@ -133,7 +133,7 @@ class SettingsViewController: UITableViewController {
             let destinationViewController: UIViewController
             switch indexPath.row {
             case 0:
-                destinationViewController = AccountViewController()
+                destinationViewController = AccountViewController(userSession: UserSession())
             case 1:
                 destinationViewController = SettingNotificationsViewController()
             case 2:

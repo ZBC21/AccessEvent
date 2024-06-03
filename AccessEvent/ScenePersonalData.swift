@@ -26,13 +26,24 @@ struct AccountSetting {
 
 class AccountViewController: UITableViewController {
 
-    var settings = [
-        AccountSetting(title: "Nombre", type: .text(value: "")),
-        AccountSetting(title: "Apellido", type: .text(value: "")),
-        AccountSetting(title: "Dirección", type: .text(value: "")),
-        AccountSetting(title: "E-Mail", type: .text(value: "")),
-        AccountSetting(title: "Género", type: .gender(value: .male))
-    ]
+    var settings: [AccountSetting]
+    var userSession: UserSession
+
+    init(userSession: UserSession) {
+        self.userSession = userSession
+        self.settings = [
+            AccountSetting(title: "Nombre", type: .text(value: userSession.currentUser?.name ?? "")),
+            AccountSetting(title: "Apellido", type: .text(value: userSession.currentUser?.lastName ?? "")),
+            AccountSetting(title: "Dirección", type: .text(value: userSession.currentUser?.address ?? "")),
+            AccountSetting(title: "E-Mail", type: .text(value: userSession.currentUser?.email ?? "")),
+            AccountSetting(title: "Género", type: .gender(value: .male)) // Aquí puedes actualizar el valor según sea necesario
+        ]
+        super.init(style: .plain)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,6 +94,10 @@ class AccountViewController: UITableViewController {
             }
             cell.textLabel?.text = setting.title
             cell.textField.text = value
+            cell.textChanged = { [weak self] newText in
+                self?.settings[indexPath.row].type = .text(value: newText)
+                self?.updateUserSession(for: indexPath.row, with: newText)
+            }
             return cell
         case .gender(let value):
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "genderCell", for: indexPath) as? GenderPickerTableViewCell else {
@@ -93,19 +108,43 @@ class AccountViewController: UITableViewController {
             return cell
         }
     }
+
+    private func updateUserSession(for index: Int, with newValue: String) {
+        guard let user = userSession.currentUser else { return }
+        switch index {
+        case 0:
+            userSession.currentUser?.name = newValue
+        case 1:
+            userSession.currentUser?.lastName = newValue
+        case 2:
+            userSession.currentUser?.address = newValue
+        case 3:
+            userSession.currentUser?.email = newValue
+        default:
+            break
+        }
+    }
 }
 
 
-class TextFieldTableViewCellP: UITableViewCell {
+
+class TextFieldTableViewCellP: UITableViewCell, UITextFieldDelegate {
     let textField = UITextField()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
+        
+        textLabel?.translatesAutoresizingMaskIntoConstraints = false
+        textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
         contentView.addSubview(textField)
         NSLayoutConstraint.activate([
-            textField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            textLabel!.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            textLabel!.widthAnchor.constraint(equalToConstant: 80), // Ajusta el ancho según sea necesario
+            textLabel!.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            
+            textField.leadingAnchor.constraint(equalTo: textLabel!.trailingAnchor, constant: 15),
             textField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
             textField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             textField.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
@@ -116,7 +155,14 @@ class TextFieldTableViewCellP: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textChanged?(textField.text ?? "")
+    }
+
+    var textChanged: ((String) -> Void)?
 }
+
 
 class GenderPickerTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
     let pickerView = UIPickerView()
@@ -125,13 +171,18 @@ class GenderPickerTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicker
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
+        textLabel?.translatesAutoresizingMaskIntoConstraints = false
         pickerView.delegate = self
         pickerView.dataSource = self
-
         pickerView.translatesAutoresizingMaskIntoConstraints = false
+
         contentView.addSubview(pickerView)
         NSLayoutConstraint.activate([
-            pickerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            textLabel!.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            textLabel!.widthAnchor.constraint(equalToConstant: 80), // Ajusta el ancho según sea necesario
+            textLabel!.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            
+            pickerView.leadingAnchor.constraint(equalTo: textLabel!.trailingAnchor, constant: 15),
             pickerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
             pickerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             pickerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
@@ -176,17 +227,23 @@ class GenderPickerTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicker
 
 
 
+
 // Preview for SwiftUI
 import SwiftUI
 
 struct AccountViewControllerPreview: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
-        let viewController = AccountViewController()
+        let userSession = UserSession()
+        // Simula el inicio de sesión para la previsualización
+        userSession.currentUser = RegistrationData(name: "John", lastName: "Doe", email: "john.doe@example.com", address: "123 Street", username: "johndoe", password: "password123")
+        let viewController = AccountViewController(userSession: userSession)
         return UINavigationController(rootViewController: viewController)
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) { }
 }
+
+
 
 #if DEBUG
 struct AccountViewController_Previews: PreviewProvider {

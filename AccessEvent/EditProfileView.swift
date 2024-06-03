@@ -100,7 +100,7 @@ struct EditProfileView: View {
             Button(action: {
                 self.presentationMode.wrappedValue.dismiss()
             }) {
-                Text("Save")
+                Text("Guardar")
                     .bold()
                     .padding()
                     .frame(maxWidth: .infinity)
